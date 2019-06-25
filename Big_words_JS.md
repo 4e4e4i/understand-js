@@ -288,3 +288,11 @@ it doesn’t have to save to a variable**
 ## Inheritance (Наследование)
 
 **One object gets access to the properties and methods of another object.**
+
+---
+
+## Polyfill
+
+**Code that adds a feature which the engine may lack**
+
+*Код, который добавляет характиристику, которой не хватает движку*
