@@ -296,3 +296,11 @@ it doesn’t have to save to a variable**
 **Code that adds a feature which the engine may lack**
 
 *Код, который добавляет характиристику, которой не хватает движку*
+
+---
+
+## Syntactic sugar
+
+**A different way to type something that doesn't change how it works under the hood**
+
+*Другой способ напечатать что-то, но не изменить как оно работает под капотом*
