@@ -304,3 +304,13 @@ it doesn’t have to save to a variable**
 **A different way to type something that doesn't change how it works under the hood**
 
 *Другой способ напечатать что-то, но не изменить как оно работает под капотом*
+
+---
+
+## Method chaining
+
+**Calling one method after another, and each method affects the parent object**
+
+*Вызов одного метода за другим и каждый метод влияет на родительский объект*
+* So obj.method1().method2() where both methods end up with a 'this' variable pointing at 'obj'.
+
