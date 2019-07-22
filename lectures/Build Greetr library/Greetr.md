@@ -414,3 +414,46 @@ Greetr.prototype = {
      }
  };
  ```
+ 
+ ## Adding jQuery Support
+ 
+ Добавляем поддержку jQuery в нашу библиотеку.
+ 
+ создадим новый метод HTMLGreeting, который будет принимать селектор для jQuery значение
+ для отображение формальное будет сообщение или нет.
+ 
+ Сделаем проверку на присутствие jQuery в проекте. Если джиквири отсутствует, то выкидываем ошибку.
+ 
+ Проверку на селектор, если селектора нет, то также выкидываем ошибку.
+ 
+ Получим сообщение, которое будем выводить
+ 
+ Затем используем jQuery (но так как мы принимали $ в аргументах нашей библиотки, мы можем
+ в будущем использовать не только jQuery). 
+ 
+```javascript
+Greetr.prototype = {
+    HTMLGreeting: function (selector, formal) {
+      if (!jQuery) {
+          throw "jQuery not loaded";
+      }
+      
+      if (!selector) {
+          throw 'Missing selector';
+      }
+      
+      let msg;
+      if (formal) {
+          msg = this.formalGreeting();
+      } else {
+          msg = this.greeting();
+      }
+      
+      $(selector).html(msg);
+      
+      return this;
+    }
+}   
+
+```
+ 
