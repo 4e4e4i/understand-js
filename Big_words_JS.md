@@ -314,3 +314,12 @@ it doesn’t have to save to a variable**
 *Вызов одного метода за другим и каждый метод влияет на родительский объект*
 * So obj.method1().method2() where both methods end up with a 'this' variable pointing at 'obj'.
 
+---
+
+## Transpile
+
+**Convert the syntax of one programming language, to another**
+
+*Конвертация синтаксиса из одного языка программирования в другой*
+*In this case languages that don't really ever run anywhere, but instead are processed by 'transpilers' that generate JS*
+
