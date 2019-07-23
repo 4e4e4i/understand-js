@@ -1,7 +1,9 @@
 $('#login').click(function () {
+    const firstName = $('#firstname').val();
+    const lastName = $('#lastname').val();
+    const language = $('#lang').val();
+    const loginGrtr = G$(firstName, lastName);
 
-    const loginGrtr = G$('John', 'Doe');
-
-    loginGrtr.setLang($('#lang').val()).HTMLGreeting('#greeting', true).log();
+    loginGrtr.setLang(language).HTMLGreeting('#greeting', true);
 
 });
